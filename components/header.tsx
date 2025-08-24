@@ -9,7 +9,7 @@ import { cn } from '@/lib/utils';
 export default function Header() {
   const pathname = usePathname();
   return (
-    <header className="fixed top-0 z-40 w-full border-b border-white/10 bg-black/40 backdrop-blur">
+    <header className="fixed top-0 z-40 w-full border-b border-border/40 bg-background/60 backdrop-blur">
       <Container className="flex h-14 items-center justify-between">
         <nav className="flex items-center gap-6">
           {site.nav.map((item) => (
@@ -17,8 +17,10 @@ export default function Header() {
               key={item.href}
               href={item.href}
               className={cn(
-                'text-sm font-medium transition-colors hover:text-indigo-400',
-                pathname === item.href ? 'text-indigo-400' : 'text-gray-200'
+                'text-sm font-medium transition-colors hover:text-indigo-600 dark:hover:text-indigo-400',
+                pathname === item.href
+                  ? 'text-indigo-600 dark:text-indigo-400'
+                  : 'text-foreground'
               )}
             >
               {item.name}

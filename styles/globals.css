@@ -20,6 +20,6 @@
     --ring: 262 83% 58%;
   }
   body {
-    @apply min-h-screen bg-gradient-to-br from-gray-900 via-indigo-900 to-black text-foreground antialiased font-sans;
+    @apply min-h-screen bg-background text-foreground antialiased font-sans;
   }
 }
