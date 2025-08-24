@@ -24,13 +24,13 @@ export default function HomePage() {
           </div>
           <div className="flex justify-center gap-6 pt-4">
             <Link href={`mailto:${site.social.email}`} aria-label="Email">
-              <Mail className="h-5 w-5 text-gray-400 hover:text-plum-400" />
+              <Mail className="h-5 w-5 text-gray-400 hover:text-slate-400" />
             </Link>
             <Link href={site.social.github} aria-label="GitHub">
-              <Github className="h-5 w-5 text-gray-400 hover:text-plum-400" />
+              <Github className="h-5 w-5 text-gray-400 hover:text-slate-400" />
             </Link>
             <Link href={site.social.linkedin} aria-label="LinkedIn">
-              <Linkedin className="h-5 w-5 text-gray-400 hover:text-plum-400" />
+              <Linkedin className="h-5 w-5 text-gray-400 hover:text-slate-400" />
             </Link>
           </div>
         </Container>
@@ -40,7 +40,7 @@ export default function HomePage() {
           <ul className="flex flex-col gap-2 text-sm sm:flex-row sm:justify-center sm:gap-6">
             {site.highlights.map((h) => (
               <li key={h} className="flex items-center gap-2">
-                <span className="h-1 w-1 rounded-full bg-plum-500" />
+                <span className="h-1 w-1 rounded-full bg-slate-500" />
                 {h}
               </li>
             ))}

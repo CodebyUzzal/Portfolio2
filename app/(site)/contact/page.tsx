@@ -45,7 +45,7 @@ export default function ContactPage() {
           <Button type="submit">Send</Button>
         </form>
         {status === 'sent' && (
-          <p className="text-sm text-plum-400">Message sent!</p>
+          <p className="text-sm text-slate-400">Message sent!</p>
         )}
         {status === 'error' && (
           <p className="text-sm text-red-500">
