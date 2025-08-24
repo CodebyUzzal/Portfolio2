@@ -17,7 +17,7 @@ export default function ProjectsPage() {
         <div className="flex flex-wrap gap-2">
           <Badge
             onClick={() => setFilter(null)}
-            className={filter === null ? 'bg-plum-600 text-white' : 'cursor-pointer'}
+            className={filter === null ? 'bg-slate-600 text-white' : 'cursor-pointer'}
           >
             All
           </Badge>
@@ -25,7 +25,7 @@ export default function ProjectsPage() {
             <Badge
               key={t}
               onClick={() => setFilter(t === filter ? null : t)}
-              className={filter === t ? 'bg-plum-600 text-white' : 'cursor-pointer'}
+              className={filter === t ? 'bg-slate-600 text-white' : 'cursor-pointer'}
             >
               {t}
             </Badge>
